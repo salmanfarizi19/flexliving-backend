@@ -75,7 +75,7 @@ if (!reviews || reviews.length === 0) {
 app.patch('/api/reviews/hostaway/:id', (req, res) => {
   const reviewId = parseInt(req.params.id, 10);
   const { status } = req.body;
-  const filePath = path.join(__dirname, '../mock/reviews.json');
+  const filePath = path.join(__dirname, '../reviews.json');
 
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
