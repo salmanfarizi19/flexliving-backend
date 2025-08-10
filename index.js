@@ -37,7 +37,7 @@ function normalizeReviews(data) {
 
 // GET reviews route
 app.get('/api/reviews/hostaway', async (req, res) => {
-  const mockPath = path.join(__dirname, '../mock/reviews.json');
+  const mockPath = path.join(__dirname, '../reviews.json');
 
   try {
     // 1) Try Hostaway sandbox API
